@@ -1,0 +1,237 @@
+* {
+  margin: 0;
+}
+.body {
+  background-color: black;
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  font-size: 15px;
+  margin: 0 !important;
+}
+.newbody {
+  margin: 0;
+}
+
+.general {
+  display: block;
+  background-color: hsl(240, 78%, 98%);
+  background-image: url("images/bg-top.svg"), url("images/bg-bottom.svg");
+  background-position: left top, right bottom;
+  background-repeat: no-repeat;
+  background-size: 10%;
+
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+}
+
+.top h1 {
+  color: hsl(233, 13%, 49%);
+  padding-top: 30px;
+}
+
+.periodo {
+  display: flex;
+  /* grid-template-columns: 1fr 1fr 1fr; */
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+}
+
+.periodo p {
+  font-weight: bold;
+  color: hsl(234, 14%, 74%);
+}
+
+.switch {
+  background: linear-gradient(
+    to bottom right,
+    hsl(236, 72%, 79%),
+    hsl(237, 63%, 64%)
+  );
+
+  height: 20px;
+  width: 40px;
+  border-radius: 10px;
+  margin: 0 20px;
+
+  user-select: none;
+  cursor: pointer;
+}
+
+.switch::before {
+  content: "";
+  display: block;
+  width: 14px;
+  height: 14px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 50%;
+  align-content: center;
+  margin-top: 3px;
+  margin-left: 2px;
+  transform: translateX(21px);
+  will-change: transform;
+  transition: 0.3s;
+}
+
+.hide:checked ~ .switch::before {
+  transform: translateX(0px);
+}
+
+.hide {
+  display: none;
+}
+.bottom {
+  display: flex;
+  justify-content: center;
+}
+.cardcontainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin: 0;
+  column-gap: 0;
+  align-self: center;
+  justify-self: center;
+}
+
+.card {
+  text-align: center;
+  width: 300px;
+  height: 450px;
+  margin: 0;
+  box-shadow: 50px 50px 100px #c9c7c7;
+}
+
+hr {
+  width: 200px;
+  border: none;
+  height: 1px;
+  margin: 0 auto 0 auto;
+  background-color: hsl(240, 78%, 98%);
+}
+.card h1 {
+  font-size: 4em;
+  color: hsl(232, 13%, 33%);
+}
+
+.card p {
+  font-size: 0.9em;
+  padding: 15px 0;
+}
+
+.descripcion,
+.descripcion2 {
+  line-height: 1.5em;
+}
+
+.card.first {
+  border-radius: 10px 0 0 10px;
+}
+
+.card.third {
+  border-radius: 0 10px 10px 0;
+}
+
+.card.first,
+.card.third {
+  background-color: white;
+  margin-top: 35px;
+  margin-bottom: 100px;
+  font-weight: bold;
+}
+
+.card.first,
+.card.third {
+  color: hsl(233, 13%, 49%);
+  font-size: 0.9em;
+}
+
+.card.second {
+  background: linear-gradient(
+    to bottom right,
+    hsl(236, 72%, 79%),
+    hsl(237, 63%, 64%)
+  );
+  padding: 20px 0;
+
+  font-weight: bold;
+  border-radius: 10px;
+  color: hsl(240, 78%, 98%);
+  margin-top: 15px;
+}
+
+.card.second h1 {
+  color: white;
+  margin: 0px;
+  padding-bottom: 45px;
+}
+
+.learn {
+  display: block;
+  background: linear-gradient(
+    to bottom right,
+    hsl(236, 72%, 79%),
+    hsl(237, 63%, 64%)
+  );
+  margin: 20px auto 0 auto;
+
+  justify-self: center;
+  width: 200px;
+  padding: 10px 10px;
+  border-radius: 4px;
+  color: hsl(240, 78%, 98%);
+}
+
+.learn:hover {
+  background: white;
+  cursor: pointer;
+  z-index: 5;
+  color: hsl(237, 63%, 64%);
+  border: solid 1px hsl(237, 63%, 64%);
+  border-radius: 5px;
+}
+
+.learn2 {
+  background-color: white;
+  display: block;
+  margin: 30px auto 0 auto;
+  width: 200px;
+  justify-self: center;
+  padding: 10px 70px;
+  color: hsl(236, 72%, 79%);
+  border-radius: 4px;
+}
+.learn2:hover {
+  background-color: rgba(245, 222, 179, 0);
+  border: solid white 1px;
+}
+
+@media (max-width: 375px) {
+  .bottom {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .cardcontainer {
+    grid-template-columns: 1fr;
+  }
+}
+.general {
+  display: block;
+  background-color: hsl(240, 78%, 98%);
+  background-image: url("images/bg-top.svg"), url("images/bg-bottom.svg");
+  background-position: right top, left bottom;
+  background-repeat: no-repeat;
+  background-size: 40%;
+  margin: 0 !important;
+  top: 0;
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+}
+
+.card.first,
+.card.third {
+  background-color: white;
+  margin-top: 35px;
+  margin-bottom: 25px;
+  font-weight: bold;
+  border-radius: 10px;
+}

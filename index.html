@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | [Challenge Matias Juncos]</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body>
+<div class="general">
+  <div class="top"> 
+    <h1>Our Pricing</h1>
+    <div class="periodo"> 
+      <p>Annually</p>
+      <input class="hide" type="checkbox" id="cbox" value="first_checkbox" onclick=myFunction()>
+      <label class="switch" for="cbox"> <div class="bolita"></div></label>
+      
+        
+
+      
+      <p>Monthly</p>
+    </div>
+  </div>
+    <div class="bottom">
+      <div class ="cardcontainer">
+        <div class="card first">
+            <p>Basic</p>
+            <h1 class="mensuales" id="month">&dollar;19.99</h1>
+            <h1 class="anuales" id="year">&dollar;199.99</h1>
+            <div class="descripcion">
+              <hr>
+            <p>500 GB Storage</p>
+            <hr>
+            <p>2 Users Allowed</p>
+            <hr>
+            <p>Send up to 3 GB</p></div>
+            <hr>
+            <p class="learn">Learn More</p>
+        </div>
+        <div class="card second">
+            <p>Professional</p>
+            <h1 class="mensuales" id="month">&dollar;24.99</h1>
+            <h1 class="anuales" id="year">&dollar;249.99</h1>
+            <div class="descripcion2">
+              <hr>
+            <p>1 TB Storage</p>
+            <hr>
+            <p>5 Users Allowed</p>
+            <hr>
+            <p>Send up to 10 GB</p></div>
+            <hr>
+            <p class="learn2">Learn More</p>
+      </div>
+      <div class="card third">
+            <p> Master</p>
+            <h1 class="mensuales" id="month">&dollar;39.99</h1>
+            <h1 class="anuales" id="year">&dollar;399.99</h1>
+            <div class="descripcion">
+            <hr>
+            <p>2 TB Storage</p>
+            <hr>
+            <p>10 Users Allowed</p>
+            <hr>
+            <p>Send up to 20 GB</p></div>
+            <hr>
+            <p class="learn">Learn More</p>
+      </div>
+    </div>
+  </div>
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Matias Juncos</a>.
+  </div>
+</div>
+  <script src="js.js"></script>
+
+ 
+</body>
+</html>
