@@ -1,28 +1,20 @@
 function myFunction() {
     var checkbox = document.getElementById("cbox");
     var chequeado = checkbox.checked;
-    console.log(chequeado)
 
-    var mensuales = document.getElementsByClassName("mensuales");
-    var anuales = document.getElementsByClassName("anuales")
-    console.log(mensuales);
-     if (chequeado === true){
+    var basic = document.getElementById('basic');
+    var professional = document.getElementById("professional");
+    var master = document.getElementById("master")
 
-        var ocult = mensuales[0].style.display = "none";
-       var show = anuales[0].style.display = "block";
-        var ocult = mensuales[1].style.display = "none";
-       var show = anuales[1].style.display = "block";
-        var ocult = mensuales[2].style.display = "none";
-       var show = anuales[2].style.display = "block";
+     if (!chequeado){
+      basic.innerHTML = '19.99'
+      professional.innerText = '24.99'
+      master.innerText = '39.99'
      }else{
-        ocult = mensuales[0].style.display = "block";
-        show = anuales[0].style.display = "none";
-        ocult = mensuales[1].style.display = "block";
-        show = anuales[1].style.display = "none";
-        ocult = mensuales[2].style.display = "block";
-        show = anuales[2].style.display = "none";
+      basic.innerText = '199.99'
+      professional.innerText = '249.99'
+      master.innerText = '399.99'
      }
 
 }
-myFunction()
 
